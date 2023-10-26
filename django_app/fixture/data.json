@@ -1,0 +1,128 @@
+[
+  {
+    "model": "django_app.menu",
+    "pk": 1,
+    "fields": {
+      "menu_item_name": "Смартфоны и гаджеты",
+      "menu_item_reference": "/tech/",
+      "parent_menu_item": null
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 2,
+    "fields": {
+      "menu_item_name": "Смартфоны",
+      "menu_item_reference": "/computers/",
+      "parent_menu_item": 1
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 3,
+    "fields": {
+      "menu_item_name": "Iphon 15 pro",
+      "menu_item_reference": "/computers/",
+      "parent_menu_item": 2
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 4,
+    "fields": {
+      "menu_item_name": "Iphon 15",
+      "menu_item_reference": "/computers/",
+      "parent_menu_item": 2
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 5,
+    "fields": {
+      "menu_item_name": "Гаджеты",
+      "menu_item_reference": "/keyboards/",
+      "parent_menu_item": 1
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 6,
+    "fields": {
+      "menu_item_name": "Фитнес-браслет",
+      "menu_item_reference": "/computers/",
+      "parent_menu_item": 5
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 7,
+    "fields": {
+      "menu_item_name": "Apple Watch",
+      "menu_item_reference": "/computers/",
+      "parent_menu_item": 5
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 8,
+    "fields": {
+      "menu_item_name": "Ноутбуки и компьютеры",
+      "menu_item_reference": "/tech/",
+      "parent_menu_item": null
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 9,
+    "fields": {
+      "menu_item_name": "Ноутбуки",
+      "menu_item_reference": "/computers/",
+      "parent_menu_item": 8
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 10,
+    "fields": {
+      "menu_item_name": "Игровые ноутбуки",
+      "menu_item_reference": "/keyboards/",
+      "parent_menu_item": 9
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 11,
+    "fields": {
+      "menu_item_name": "Ультрабуки",
+      "menu_item_reference": "/tech/",
+      "parent_menu_item": 9
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 14,
+    "fields": {
+      "menu_item_name": "Компьютеры",
+      "menu_item_reference": "/tech/",
+      "parent_menu_item": 8
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 15,
+    "fields": {
+      "menu_item_name": "Системные блоки",
+      "menu_item_reference": "/computers/",
+      "parent_menu_item": 14
+    }
+  },
+  {
+    "model": "django_app.menu",
+    "pk": 16,
+    "fields": {
+      "menu_item_name": "Мониторы",
+      "menu_item_reference": "/keyboards/",
+      "parent_menu_item": 14
+    }
+  }
+]
