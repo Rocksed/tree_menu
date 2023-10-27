@@ -18,7 +18,7 @@ ___
 bash
 
 python manage.py migrate
-___   
+___
 >Создайте суперпользователя
 
 bash
@@ -30,13 +30,11 @@ ___
 bash
 
 python manage.py loaddata data
-
 ___
 >Запустите сервер.
-
 
 bash
 
 python manage.py runserver
 
->Перейдите на http://localhost:8000
+    Перейдите на http://localhost:8000/.
