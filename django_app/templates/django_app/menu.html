@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <link href="/static/css/styles.css" rel="stylesheet">
+    <link href="/static/css/styles.menu.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <ul id="nav">
+        {% for item in main_menu %}
+            <li>
+                <a href="{{ item.item.menu_item_reference }}">{{ item.item.menu_item_name }}</a>
+                {% if item.children %}
+                    <ul>
+                        {% for child in item.children %}
+                            <li>
+                                <a href="{{ child.item.menu_item_reference }}">{{ child.item.menu_item_name }}</a>
+                                {% if child.children %}
+                                    <ul>
+                                        {% for sub_child in child.children %}
+                                            <li>
+                                                <a href="{{ sub_child.item.menu_item_reference }}">{{ sub_child.item.menu_item_name }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
+<script src="/static/js/submenu.js"></script>
+</body>
+</html>
+
+

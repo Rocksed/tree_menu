@@ -1,0 +1,38 @@
+ul#nav {
+	list-style-type: none;
+	width: 12em;
+	background: black;
+	padding-left: 0;
+}
+ul#nav li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: larger;
+	line-height: 200%;
+	display: block;
+	border-bottom: 1px solid #777;
+	padding-left: 1em;
+}
+ul#nav li a:hover {
+	background: #633;
+}
+ul#nav li.multi::before {
+	content: "\25B6";
+	color: red;
+	float: left;
+	margin: .5em;
+}
+ul#nav li.multi:hover::before {
+	content: "\25BC";
+}
+ul#nav li.multi ul {
+	display: none;
+	padding-left: 0;
+}
+ul#nav li.multi:hover ul {
+	display: block;
+}
+
+ul ul {
+    display: none;
+}
